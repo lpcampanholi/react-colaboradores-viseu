@@ -1,0 +1,13 @@
+.setor {
+    text-align: center;
+    background-color: rgb(193, 164, 221);
+    padding: 1em 0 3em 0;
+}
+
+.setor h2 {
+    margin: 0.5em 0;
+    border-bottom: 5px solid violet;
+    display: inline-block;
+    font-family: 'Prata', serif;
+    font-weight: 400;
+}

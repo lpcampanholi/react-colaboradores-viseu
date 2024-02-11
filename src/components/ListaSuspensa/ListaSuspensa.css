@@ -1,23 +1,22 @@
-.campo {
+.lista-suspensa {
     display: flex;
     flex-direction: column;
     margin: 1em 0;
 }
 
-.campo input {
+.lista-suspensa select {
     border: none;
     padding: 1em;
     box-shadow: 1px 1px 3px 1px #33333332;
 }
 
-.campo input:focus {
+.lista-suspensa select:focus {
     outline: none;
     box-shadow: 1px 1px 10px var(--azulclaro);
 }
 
-.campo label {
+.lista-suspensa label {
     font-weight: 700;
     font-size: 0.9em;
     margin-bottom: 0.2em;
 }
-

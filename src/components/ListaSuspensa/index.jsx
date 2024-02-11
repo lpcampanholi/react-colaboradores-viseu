@@ -1,10 +1,16 @@
-function ListaSuspensa() {
+import './ListaSuspensa.css';
+
+function ListaSuspensa({ nome, lista, aoAtualizar }) {
   return (
     <div className="lista-suspensa">
-      <select>
-        <option>opacao01</option>
-        <option>opacao02</option>
-        <option>opacao03</option>
+      <label htmlFor={nome}>{nome}</label>
+      <select name={nome} id={nome} onChange={aoAtualizar}>
+        <option value=''>Selecione</option>
+        {lista.map((elemento) => {
+          return (
+            <option value={elemento} key={elemento.toLowerCase()}>{elemento}</option>
+          )
+        })}
       </select>
     </div>
   )

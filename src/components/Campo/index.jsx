@@ -1,9 +1,6 @@
 import './Campo.css';
 
-function Campo({ tipo, nome, obrigatorio = false }) {
-
-  const placeholder = `Digite seu ${nome}`;
-
+function Campo({ tipo, nome, placeholder, obrigatorio = false, aoAtualizar }) {
   return (
     <div className="campo">
       <label htmlFor={nome}>{nome}</label>
@@ -13,6 +10,7 @@ function Campo({ tipo, nome, obrigatorio = false }) {
         id={nome}
         required={obrigatorio}
         placeholder={placeholder}
+        onChange={aoAtualizar}
       />
     </div>
   )
