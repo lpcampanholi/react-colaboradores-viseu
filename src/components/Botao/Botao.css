@@ -1,0 +1,18 @@
+.botao {
+    border: none;
+    background-color: var(--azul);
+    color: white;
+    padding: 0.8em 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: var(--azulclaro);
+    transition: 0.2s ease;
+}
+
+.botao:focus {
+    background-color: var(--azulclaro);
+    outline: none;
+}

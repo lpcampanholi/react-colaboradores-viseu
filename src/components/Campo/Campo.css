@@ -1,0 +1,22 @@
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.campo input {
+    border: none;
+    padding: 1em;
+    box-shadow: 1px 1px 3px 1px #33333332;
+}
+
+.campo input:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px var(--azulclaro);
+}
+
+.campo label {
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
