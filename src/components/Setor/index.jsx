@@ -1,12 +1,20 @@
 import './Setor.css';
 import Colaborador from '../Colaborador';
+import { useState } from 'react';
 
-function Setor({ nome, colaboradores, corDestaque, corFundo }) {
+function Setor({ nome, colaboradores, corDestaque, corFundo, aoExcluir, lista }) {
+
+  const [cor, setCor] = useState(corDestaque);
+
+  function alteraCor(e) {
+    setCor(e.target.value)
+  }
+
   return (
     colaboradores.length > 0 &&
     <section className='setor' style={{ backgroundColor: corFundo }}>
-      <h2 style={{ borderColor: corDestaque }}>{nome}</h2>
-      <input className="seletor-cor" type="color" value={corDestaque} />
+      <h2 style={{ borderColor: cor }}>{nome}</h2>
+      <input className="seletor-cor" type="color" value={corDestaque} onChange={alteraCor} />
       <div className="colaboradores-container">
         {colaboradores.map((colaborador => {
           return (
@@ -16,7 +24,9 @@ function Setor({ nome, colaboradores, corDestaque, corFundo }) {
               cargo={colaborador.cargo}
               imagem={colaborador.imagem}
               setor={colaborador.setor}
-              cor={corDestaque}
+              cor={cor}
+              aoExcluir={aoExcluir}
+              lista={lista}
             />
           )
         }))}

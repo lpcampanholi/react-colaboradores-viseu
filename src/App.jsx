@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import Cabecalho from "./components/Cabecalho";
 import Formulario from "./components/Formulario";
 import Rodape from "./components/Rodape";
@@ -10,36 +11,43 @@ function App() {
   const setores = [
     {
       nome: 'Atendimento',
+      id: uuidv4(),
       corDestaque: '#57C278',
       corFundo: '#D9F7E9'
     },
     {
       nome: 'Comercial',
+      id: uuidv4(),
       corDestaque: '#82CFFA',
       corFundo: '#E8F8FF'
     },
     {
       nome: 'Editorial',
+      id: uuidv4(),
       corDestaque: '#A6D157',
       corFundo: '#F0F8E2'
     },
     {
       nome: 'Marketing',
+      id: uuidv4(),
       corDestaque: '#E06B69',
       corFundo: '#FDE7E8'
     },
     {
       nome: 'Fechamento',
+      id: uuidv4(),
       corDestaque: '#DB6EBF',
       corFundo: '#FAE9F5'
     },
     {
       nome: 'Financeiro',
+      id: uuidv4(),
       corDestaque: '#FFBA05',
       corFundo: '#FFF5D9'
     },
     {
       nome: 'RH',
+      id: uuidv4(),
       corDestaque: '#FF8A29',
       corFundo: '#FFEEDF'
     }
@@ -78,6 +86,10 @@ function App() {
     setColaboradores([...colaboradores, colaborador])
   }
 
+  function excluirColaborador(e) {
+    // if
+  }
+
   return (
     <div className="App">
       <Cabecalho />
@@ -95,6 +107,8 @@ function App() {
             corDestaque={setor.corDestaque}
             corFundo={setor.corFundo}
             colaboradores={colaboradores.filter((colaborador) => colaborador.setor === setor.nome)}
+            aoExcluir={excluirColaborador}
+            lista={setores}
           />
         )
       })}
