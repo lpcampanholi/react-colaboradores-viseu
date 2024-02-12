@@ -1,14 +1,14 @@
 import './ListaSuspensa.css';
 
-function ListaSuspensa({ nome, lista, aoAtualizar }) {
+function ListaSuspensa({ nome, lista, obrigatorio, aoAtualizar }) {
   return (
     <div className="lista-suspensa">
       <label htmlFor={nome}>{nome}</label>
-      <select name={nome} id={nome} onChange={aoAtualizar}>
+      <select name={nome} id={nome} onChange={aoAtualizar} required={obrigatorio}>
         <option value=''>Selecione</option>
         {lista.map((elemento) => {
           return (
-            <option value={elemento} key={elemento.toLowerCase()}>{elemento}</option>
+            <option value={elemento.nome} key={elemento.nome}>{elemento.nome}</option>
           )
         })}
       </select>

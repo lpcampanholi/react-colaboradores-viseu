@@ -6,7 +6,7 @@
 
 .lista-suspensa select {
     border: none;
-    padding: 1em;
+    padding: 0.725em;
     box-shadow: 1px 1px 3px 1px #33333332;
 }
 

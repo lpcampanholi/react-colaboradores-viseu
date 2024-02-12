@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Prata&display=swap');
 
 :root {
-    --azul: #012E41;
-    --azulclaro: #005d85;
+    --azul: #005d85;
+    --azulclaro: #279fd2;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
-    background-color: #dadada;
+    background-color: #e8e8e8;
     margin: 0;
 }

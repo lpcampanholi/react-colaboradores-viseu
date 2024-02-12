@@ -1,13 +1,27 @@
 .setor {
     text-align: center;
-    background-color: rgb(193, 164, 221);
-    padding: 1em 0 3em 0;
+    padding: 0.5em 0 1em 0;
+    position: relative;
 }
 
 .setor h2 {
     margin: 0.5em 0;
-    border-bottom: 5px solid violet;
+    border-bottom: 4px solid;
     display: inline-block;
     font-family: 'Prata', serif;
     font-weight: 400;
+    font-size: 1.3em;
+}
+
+.colaboradores-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.seletor-cor {
+    position: absolute;
+    right: 1em;
+    top: 2em;
 }

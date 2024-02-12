@@ -1,16 +1,22 @@
 import './Colaborador.css';
 import { MdFavoriteBorder } from "react-icons/md";
+import { IoMdCloseCircle } from "react-icons/io";
 
-function Colaborador({ cara }) {
+function Colaborador({ nome, cargo, imagem, setor, cor }) {
   return (
     <div className="colaborador">
-      <div>
-        <img src={cara.imagem} alt={cara.nome} />
+      <div className="icon-fechar">
+        <IoMdCloseCircle />
       </div>
-      <div>
-        <h3>{cara.nome}</h3>
-        <span className='cargo'>{cara.cargo}</span>
-        <div className='etiqueta'>{cara.setor}</div>
+
+      <div className="colaborador-cabecalho" style={{ backgroundColor: cor }}>
+        <img src={imagem} alt={nome} />
+      </div>
+
+      <div className="colaborador-rodape">
+        <h3>{nome}</h3>
+        <p>{cargo}</p>
+        <div className='etiqueta' style={{ backgroundColor: cor }}>{setor}</div>
         <MdFavoriteBorder />
       </div>
     </div>
