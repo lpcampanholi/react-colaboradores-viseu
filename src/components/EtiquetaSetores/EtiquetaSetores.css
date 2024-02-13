@@ -1,0 +1,9 @@
+.etiqueta-setores {
+    font-size: 70%;
+    font-weight: 700;
+    color: white;
+    border-radius: 1em;
+    width: 50%;
+    padding: 2px;
+    margin: 0.5em auto;
+}

@@ -22,6 +22,16 @@
     padding: 2em 0;
 }
 
+.etiqueta {
+    font-size: 70%;
+    font-weight: 700;
+    color: white;
+    border-radius: 1em;
+    width: 50%;
+    padding: 2px;
+    margin: 0.5em auto;
+}
+
 .colaborador h3 {
     color: var(--azul);
     font-size: 1em;
@@ -32,16 +42,6 @@
 .colaborador p {
     font-size: 0.8em;
     margin: 0.1em 0 0 0;
-}
-
-.etiqueta {
-    font-size: 70%;
-    font-weight: 700;
-    color: white;
-    border-radius: 1em;
-    width: 50%;
-    padding: 2px;
-    margin: 0.5em auto;
 }
 
 .icon-fechar {

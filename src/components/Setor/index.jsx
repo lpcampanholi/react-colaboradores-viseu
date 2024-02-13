@@ -26,7 +26,6 @@ function Setor({ nome, colaboradores, corDestaque, corFundo, aoExcluir, lista })
               setor={colaborador.setor}
               cor={cor}
               aoExcluir={aoExcluir}
-              lista={lista}
             />
           )
         }))}
