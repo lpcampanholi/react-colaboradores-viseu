@@ -10,19 +10,19 @@
     bottom: -0.5em;
 }
 
-.colaborador-cabecalho {
+.colaborador .colaborador-cabecalho {
     border-radius: 0.8em 0.8em 0px 0px;
     height: 3.5em;
 }
 
-.colaborador-rodape {
+.colaborador .colaborador-rodape {
     background: #FFFFFF;
     box-shadow: 2px 2px 5px 1px #33333329;
     border-radius: 0px 0px 0.8em 0.8em;
     padding: 2em 0;
 }
 
-.etiqueta {
+.colaborador .etiqueta {
     font-size: 70%;
     font-weight: 700;
     color: white;
