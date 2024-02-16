@@ -98,7 +98,7 @@ function App() {
     }
   ]
 
-  const [colaboradores, setColaboradores] = useState([...colabInicial])
+  const [colaboradores, setColaboradores] = useState(colabInicial)
 
   function adicionarColaborador(colaborador) {
     setColaboradores([...colaboradores, colaborador]);
@@ -114,7 +114,8 @@ function App() {
   }
 
   function excluirColaborador(id) {
-    console.log(id);
+    setColaboradores(colaboradores.filter((colaborador) => colaborador.id !== id))
+    console.log('excluindo colaborador')
   }
 
   return (

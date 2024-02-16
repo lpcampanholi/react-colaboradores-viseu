@@ -11,7 +11,7 @@ function Setor({ setor, colaboradores, aoExcluir, mudarCor }) {
       <h2 style={{ borderColor: setor.cor }}>{setor.nome}</h2>
       <input className="seletor-cor" type="color" value={setor.cor} onChange={(e) => mudarCor(e.target.value, setor.id)} />
       <div className="colaboradores-container">
-        {colaboradores.map((colaborador => {
+        {colaboradores.map((colaborador) => {
           return (
             <Colaborador
               key={colaborador.id}
@@ -20,7 +20,7 @@ function Setor({ setor, colaboradores, aoExcluir, mudarCor }) {
               aoExcluir={aoExcluir}
             />
           )
-        }))}
+        })}
       </div>
     </section>
   )

@@ -6,11 +6,13 @@ function Colaborador({ colaborador, cor, aoExcluir }) {
   return (
     <div className="colaborador">
       <div className="icon-fechar">
-        <IoMdCloseCircle onClick={() => aoExcluir()} />
+        <IoMdCloseCircle
+          onClick={() => aoExcluir(colaborador.id)}
+        />
       </div>
 
       <div className="colaborador-cabecalho" style={{ backgroundColor: cor }}>
-        <img src={colaborador.imagem} alt={colaborador.nome} />
+        <img src={colaborador.imagem} alt={`Imagem do colaborador '${colaborador.nome}'`} />
       </div>
 
       <div className="colaborador-rodape">
