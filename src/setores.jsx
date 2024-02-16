@@ -19,17 +19,17 @@ const setoresInicial = [
   {
     id: uuidv4(),
     nome: 'Marketing',
-    cor: '#E06B69',
+    cor: '#FFBA05',
   },
   {
     id: uuidv4(),
     nome: 'Fechamento',
-    cor: '#DB6EBF',
+    cor: '#E06B69',
   },
   {
     id: uuidv4(),
     nome: 'Financeiro',
-    cor: '#FFBA05',
+    cor: '#DB6EBF',
   },
   {
     id: uuidv4(),

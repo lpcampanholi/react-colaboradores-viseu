@@ -81,7 +81,7 @@ const colabInicial = [
   },
   {
     id: uuidv4(),
-    nome: "Cleuza Luca dos Santos",
+    nome: "Cleuza dos Santos",
     cargo: "Bibliotecária",
     imagem: "./img/cleuza.jpg",
     setor: setoresInicial[4].nome
@@ -95,9 +95,9 @@ const colabInicial = [
   },
   {
     id: uuidv4(),
-    nome: "Joice",
-    cargo: "Contábil",
-    imagem: "./img/beatriz.jpg",
+    nome: "Joice Bernardo",
+    cargo: "Contadora",
+    imagem: "./img/joice.jpg",
     setor: setoresInicial[5].nome
   },
   {
