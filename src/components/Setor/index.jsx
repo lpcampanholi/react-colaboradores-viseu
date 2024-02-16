@@ -1,30 +1,22 @@
 import './Setor.css';
 import Colaborador from '../Colaborador';
-import { useState } from 'react';
+import hexToRgba from 'hex-to-rgba';
 
-function Setor({ nome, colaboradores, corDestaque, corFundo, aoExcluir, lista }) {
 
-  const [cor, setCor] = useState(corDestaque);
-
-  function alteraCor(e) {
-    setCor(e.target.value)
-  }
+function Setor({ setor, colaboradores, aoExcluir, mudarCor }) {
 
   return (
     colaboradores.length > 0 &&
-    <section className='setor' style={{ backgroundColor: corFundo }}>
-      <h2 style={{ borderColor: cor }}>{nome}</h2>
-      <input className="seletor-cor" type="color" value={corDestaque} onChange={alteraCor} />
+    <section className='setor' style={{ backgroundColor: hexToRgba(setor.cor, '0.15') }}>
+      <h2 style={{ borderColor: setor.cor }}>{setor.nome}</h2>
+      <input className="seletor-cor" type="color" value={setor.cor} onChange={(e) => mudarCor(e.target.value, setor.id)} />
       <div className="colaboradores-container">
         {colaboradores.map((colaborador => {
           return (
             <Colaborador
-              key={colaborador.nome}
-              nome={colaborador.nome}
-              cargo={colaborador.cargo}
-              imagem={colaborador.imagem}
-              setor={colaborador.setor}
-              cor={cor}
+              key={colaborador.id}
+              colaborador={colaborador}
+              cor={setor.cor}
               aoExcluir={aoExcluir}
             />
           )
