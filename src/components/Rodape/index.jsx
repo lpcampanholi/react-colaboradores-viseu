@@ -8,7 +8,7 @@ function Rodape() {
   return (
     <footer className="rodape">
       <div>
-        <span>Desenvolvido por: <strong>lpcampanholi</strong></span>
+        <span>Desenvolvido por <strong>lpcampanholi</strong></span>
       </div>
       <div className="social-media">
         <a href="https://www.instagram.com/lpcampanholi/" target="_blank" rel="noreferrer"><FaInstagram size={sizeIcons} /></a>
