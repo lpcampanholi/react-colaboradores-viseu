@@ -19,7 +19,7 @@
     background: #FFFFFF;
     box-shadow: 2px 2px 5px 1px #33333329;
     border-radius: 0px 0px 0.8em 0.8em;
-    padding: 2em 0;
+    padding: 2.2em 0 1em 0;
 }
 
 .colaborador .etiqueta {
@@ -27,9 +27,9 @@
     font-weight: 700;
     color: white;
     border-radius: 1em;
-    width: 50%;
-    padding: 2px;
-    margin: 0.5em auto;
+    padding: 1px 10px;
+    display: inline-block;
+    margin: 0.8em auto 1em auto;
 }
 
 .colaborador h3 {
@@ -41,7 +41,7 @@
 
 .colaborador p {
     font-size: 0.8em;
-    margin: 0.1em 0 0 0;
+    margin: 0.2em 0 0 0;
 }
 
 .icon-fechar {
@@ -59,21 +59,35 @@
 }
 
 .icon-fechar:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
     color: rgb(219, 12, 12);
 }
 
-.icon-heart {
-    position: absolute;
-    left: 50%;
-    bottom: 1%;
-    transform: translate(-50%, -50%);
+.icones {
+    color: var(--azul);
+    display: flex;
+    justify-content: center;
+    gap: 0.4em;
+}
+
+.icones .icon-heart {
+    color: rgb(219, 12, 12);
+    cursor: pointer;
+}
+
+.icones .icon-heart:hover {
+    transform: scale(1.1);
+}
+
+.icones .icon-heart-outline {
     cursor: pointer;
     transition: 0.2s transform;
-    transform-origin: center;
 }
 
-.icon-heart:hover {
-    transform: translate(-50%, -50%) scale(1.3);
-    color: rgb(219, 12, 12);
+.icones .social-media, .icones .social-media:visited {
+    color: var(--azul);
+}
+
+.icones .social-media:hover, .icones .icon-heart-outline:hover {
+    transform: scale(1.1);
 }

@@ -17,8 +17,8 @@ function App() {
     setColaboradores([...colaboradores, colaborador]);
   }
 
-  function alterarCorDoTime(cor, id) {
-    setSetores(setores.map(time => {
+  function alterarCorDoSetor(cor, id) {
+    setSetores(setores.map((time) => {
       if (time.id === id) {
         time.cor = cor;
       }
@@ -28,6 +28,15 @@ function App() {
 
   function excluirColaborador(id) {
     setColaboradores(colaboradores.filter((colaborador) => colaborador.id !== id))
+  }
+
+  function favoritarColaborador(id) {
+    setColaboradores(colaboradores.map((colaborador) => {
+      if (colaborador.id === id) {
+        return { ...colaborador, favorito: !colaborador.favorito };
+      }
+      return colaborador;
+    }))
   }
 
   return (
@@ -45,7 +54,8 @@ function App() {
             key={setor.id}
             setor={setor}
             aoExcluir={excluirColaborador}
-            mudarCor={alterarCorDoTime}
+            mudarCor={alterarCorDoSetor}
+            favoritar={favoritarColaborador}
             colaboradores={colaboradores.filter((colaborador) => colaborador.setor === setor.nome)}
           />
         )

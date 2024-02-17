@@ -2,8 +2,7 @@ import './Setor.css';
 import Colaborador from '../Colaborador';
 import hexToRgba from 'hex-to-rgba';
 
-
-function Setor({ setor, colaboradores, aoExcluir, mudarCor }) {
+function Setor({ setor, colaboradores, aoExcluir, mudarCor, favoritar }) {
 
   return (
     colaboradores.length > 0 &&
@@ -18,6 +17,7 @@ function Setor({ setor, colaboradores, aoExcluir, mudarCor }) {
               colaborador={colaborador}
               cor={setor.cor}
               aoExcluir={aoExcluir}
+              favoritar={favoritar}
             />
           )
         })}
