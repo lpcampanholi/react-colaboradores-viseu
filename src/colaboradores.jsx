@@ -165,7 +165,7 @@ const colabInicial = [
   {
     id: uuidv4(),
     nome: "Matheus Santos",
-    cargo: "Coordenador",
+    cargo: "Supervisor de Atendimento",
     imagem: "./img/matheus.jpeg",
     favorito: true,
     linkedin: "https://www.linkedin.com/in/matheus-santos-bb88a2240/",

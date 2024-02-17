@@ -14,7 +14,7 @@ const setoresInicial = [
   {
     id: uuidv4(),
     nome: 'Editorial',
-    cor: '#FFBA05',
+    cor: '#FF8A29',
   },
   {
     id: uuidv4(),
@@ -24,17 +24,13 @@ const setoresInicial = [
   {
     id: uuidv4(),
     nome: 'Fechamento',
-    cor: '#E06B69',
+    cor: '#61D6C9',
   },
   {
     id: uuidv4(),
     nome: 'Financeiro e RH',
-    cor: '#DB6EBF',
+    cor: '#E283CA',
   }
 ]
 
 export default setoresInicial;
-
-
-// laranja: #FF8A29
-
