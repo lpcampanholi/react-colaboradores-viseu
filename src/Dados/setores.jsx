@@ -14,7 +14,7 @@ const setoresInicial = [
   {
     id: uuidv4(),
     nome: 'Editorial',
-    cor: '#d8e4ea',
+    cor: '#ff8e52',
   },
   {
     id: uuidv4(),
