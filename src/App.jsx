@@ -4,8 +4,8 @@ import Formulario from "./components/Formulario";
 import Rodape from "./components/Rodape";
 import Setor from "./components/Setor";
 import TituloSetores from './components/TituloSetores';
-import colabInicial from './colaboradores.jsx';
-import setoresInicial from './setores.jsx';
+import colabInicial from './Dados/colaboradores.jsx';
+import setoresInicial from './Dados/setores.jsx';
 
 function App() {
 

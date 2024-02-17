@@ -7,7 +7,7 @@ const colabInicial = [
     nome: "Iago Anibio",
     cargo: "Designer",
     imagem: "./img/iago.jpeg",
-    favorito: false,
+    favorito: true,
     linkedin: "https://www.linkedin.com/in/iago-anibio-pimenta-a2a287172/",
     instagram: "https://www.instagram.com/iago_anibio/",
     setor: setoresInicial[4].nome

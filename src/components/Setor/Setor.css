@@ -5,7 +5,8 @@
 }
 
 .setor h2 {
-    margin: 0.5em 0;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
     border-bottom: 4px solid;
     display: inline-block;
     font-family: 'Prata', serif;
