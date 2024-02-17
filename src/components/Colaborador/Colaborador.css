@@ -90,4 +90,5 @@
 
 .icones .social-media:hover, .icones .icon-heart-outline:hover {
     transform: scale(1.1);
+    color: var(--azulclaro);
 }
