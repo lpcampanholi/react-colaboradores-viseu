@@ -30,8 +30,8 @@ function Colaborador({ colaborador, setores, cor, aoExcluir, favoritar, mudaDeSe
         </div>
 
         <div className="icones">
-          {colaborador.favorito ?
-            <MdFavorite className="icon-heart icon-heart-red" onClick={() => favoritar(colaborador.id)} />
+          {colaborador.favorito
+            ? <MdFavorite className="icon-heart icon-heart-red" onClick={() => favoritar(colaborador.id)} />
             : <MdFavoriteBorder className="icon-heart-outline" onClick={() => favoritar(colaborador.id)} />
           }
           {(colaborador.linkedin !== '') && <a href={colaborador.linkedin} target="_blank" rel="noreferrer"><FaLinkedin className='social-media' /></a>}
@@ -39,7 +39,6 @@ function Colaborador({ colaborador, setores, cor, aoExcluir, favoritar, mudaDeSe
         </div>
 
       </div>
-
 
     </div >
   )

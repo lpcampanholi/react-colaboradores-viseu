@@ -27,7 +27,6 @@
     font-weight: 700;
     color: white;
     border-radius: 1em;
-    padding: 1px 10px;
     display: inline-block;
     margin: 0.8em auto 1em auto;
 }
@@ -38,7 +37,6 @@
     color: white;
     font-weight: 700;
     text-align: center;
-    display: inline-block;
 }
 
 .etiqueta .option {
@@ -47,7 +45,7 @@
 
 .colaborador h3 {
     color: var(--azul);
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: bold;
     margin-bottom: 0;
 }

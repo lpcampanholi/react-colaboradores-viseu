@@ -1,6 +1,6 @@
 import './Campo.css';
 
-function Campo({ tipo, valor, nome, placeholder, obrigatorio = false, aoAtualizar }) {
+function Campo({ tipo = 'text', valor, nome, placeholder, obrigatorio = false, aoAtualizar }) {
   return (
     <div className="campo">
       <label htmlFor={nome}>{nome}</label>

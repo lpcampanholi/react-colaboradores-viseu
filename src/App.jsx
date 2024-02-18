@@ -32,7 +32,7 @@ function App() {
   function favoritarColaborador(id) {
     setColaboradores(colaboradores.map((colaborador) => {
       if (colaborador.id === id) {
-        return { ...colaborador, favorito: !colaborador.favorito };
+        colaborador.favorito = !colaborador.favorito;
       }
       return colaborador;
     }))
