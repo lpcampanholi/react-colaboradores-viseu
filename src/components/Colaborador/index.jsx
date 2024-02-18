@@ -3,7 +3,8 @@ import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 
-function Colaborador({ colaborador, cor, aoExcluir, favoritar }) {
+function Colaborador({ colaborador, cor, aoExcluir, favoritar, setores, mudaDeSetor }) {
+
   return (
     <div className="colaborador">
 
@@ -12,7 +13,7 @@ function Colaborador({ colaborador, cor, aoExcluir, favoritar }) {
       </div>
 
       <div className="colaborador-cabecalho" style={{ backgroundColor: cor }}>
-        <img src={colaborador.imagem} alt={`Imagem${colaborador.nome}`} />
+        <img src={colaborador.imagem} alt={`Imagem ${colaborador.nome}`} />
       </div>
 
       <div className="colaborador-rodape">
@@ -20,7 +21,11 @@ function Colaborador({ colaborador, cor, aoExcluir, favoritar }) {
         <p>{colaborador.cargo}</p>
 
         <div className='etiqueta' style={{ backgroundColor: cor }}>
-          {colaborador.setor}
+          <select className="banana" name={colaborador.setor} id={colaborador.setor} onChange={(e) => mudaDeSetor(colaborador.id, e.target.value)} >
+            <option className="heineken" value={colaborador.setor}>{colaborador.setor}</option>
+            {setores.filter(setor => setor.nome !== colaborador.setor)
+              .map(setor => <option className="heineken" key={setor.id} value={setor.nome}>{setor.nome}</option>)}
+          </select>
         </div>
 
         <div className="icones">
@@ -35,7 +40,7 @@ function Colaborador({ colaborador, cor, aoExcluir, favoritar }) {
       </div>
 
 
-    </div>
+    </div >
   )
 }
 
