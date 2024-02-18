@@ -4,13 +4,12 @@ import Formulario from "./components/Formulario";
 import Rodape from "./components/Rodape";
 import Setor from "./components/Setor";
 import TituloSetores from './components/TituloSetores';
-import colabInicial from './Dados/colaboradores.jsx';
 import setoresInicial from './Dados/setores.jsx';
+import { colabInicial } from './Dados/colaboradores.jsx';
 
 function App() {
 
   const [setores, setSetores] = useState(setoresInicial);
-
   const [colaboradores, setColaboradores] = useState(colabInicial);
 
   function adicionarColaborador(colaborador) {
@@ -39,6 +38,17 @@ function App() {
     }))
   }
 
+
+  function mudaDeSetor(id, novoSetor) {
+    setColaboradores(colaboradores.map((colaborador) => {
+      if (colaborador.id === id) {
+        colaborador.setor = novoSetor
+      }
+      return colaborador;
+    }))
+  }
+
+
   return (
     <div className="App">
       <Cabecalho />
@@ -57,6 +67,8 @@ function App() {
             mudarCor={alterarCorDoSetor}
             favoritar={favoritarColaborador}
             colaboradores={colaboradores.filter((colaborador) => colaborador.setor === setor.nome)}
+            setores={setores}
+            mudaDeSetor={mudaDeSetor}
           />
         )
       })}

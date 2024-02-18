@@ -32,6 +32,19 @@
     margin: 0.8em auto 1em auto;
 }
 
+.etiqueta .select {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+}
+
+.etiqueta .option {
+    color: #333;
+}
+
 .colaborador h3 {
     color: var(--azul);
     font-size: 1em;

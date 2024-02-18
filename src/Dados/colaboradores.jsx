@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import setoresInicial from './setores.jsx';
 
-const colabInicial = [
+export const colabInicial = [
   {
     id: uuidv4(),
     nome: "Iago Anibio",
@@ -173,5 +173,3 @@ const colabInicial = [
     setor: setoresInicial[2].nome
   }
 ]
-
-export default colabInicial;

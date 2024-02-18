@@ -2,12 +2,13 @@ import './Setor.css';
 import Colaborador from '../Colaborador';
 import hexToRgba from 'hex-to-rgba';
 
-function Setor({ setor, colaboradores, aoExcluir, mudarCor, favoritar }) {
+function Setor({ setor, colaboradores, aoExcluir, mudarCor, favoritar, setores, mudaDeSetor }) {
 
   return (
     colaboradores.length > 0 &&
     <section className='setor' style={{
-      backgroundColor: hexToRgba (setor.cor, '0.15')}}>
+      backgroundColor: hexToRgba(setor.cor, '0.15')
+    }}>
 
       <h2 style={{ borderColor: setor.cor }}>{setor.nome}</h2>
 
@@ -22,6 +23,8 @@ function Setor({ setor, colaboradores, aoExcluir, mudarCor, favoritar }) {
               cor={setor.cor}
               aoExcluir={aoExcluir}
               favoritar={favoritar}
+              setores={setores}
+              mudaDeSetor={mudaDeSetor}
             />
           )
         })}
