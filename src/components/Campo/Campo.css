@@ -4,10 +4,14 @@
     margin: 1em 0;
 }
 
-.campo input {
+.campo .campo-text {
     border: none;
     padding: 0.8em;
     box-shadow: 1px 1px 3px 1px #33333332;
+}
+
+.campo .campo-color:hover {
+    cursor: pointer;
 }
 
 .campo input:focus {

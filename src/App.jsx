@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import Cabecalho from "./components/Cabecalho";
-import Formulario from "./components/Formulario";
+import Formularios from "./components/Formularios/index.jsx";
 import Rodape from "./components/Rodape";
 import Setor from "./components/Setor";
 import TituloSetores from './components/TituloSetores';
@@ -14,6 +15,10 @@ function App() {
 
   function adicionarColaborador(colaborador) {
     setColaboradores([...colaboradores, colaborador]);
+  }
+
+  function adicionarSetor(novoSetor) {
+    setSetores([...setores, { ...novoSetor, id: uuidv4() }]);
   }
 
   function alterarCorDoSetor(cor, id) {
@@ -38,7 +43,6 @@ function App() {
     }))
   }
 
-
   function mudaDeSetor(id, novoSetor) {
     setColaboradores(colaboradores.map((colaborador) => {
       if (colaborador.id === id) {
@@ -48,13 +52,13 @@ function App() {
     }))
   }
 
-
   return (
     <div className="App">
       <Cabecalho />
-      <Formulario
+      <Formularios
         lista={setores}
         aoAdicionarColaborador={adicionarColaborador}
+        aoAdicionarSetor={adicionarSetor}
       />
       <TituloSetores />
 

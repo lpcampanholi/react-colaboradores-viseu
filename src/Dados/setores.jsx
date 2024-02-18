@@ -30,6 +30,11 @@ const setoresInicial = [
     id: uuidv4(),
     nome: 'Financeiro e RH',
     cor: '#E283CA',
+  },
+  {
+    id: uuidv4(),
+    nome: 'Expedição',
+    cor: '#E06B69',
   }
 ]
 

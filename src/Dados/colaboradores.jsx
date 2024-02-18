@@ -130,7 +130,7 @@ export const colabInicial = [
     favorito: false,
     linkedin: "",
     instagram: "https://www.instagram.com/biahh_bentoo/",
-    setor: setoresInicial[0].nome
+    setor: setoresInicial[6].nome
   },
   {
     id: uuidv4(),
@@ -150,7 +150,7 @@ export const colabInicial = [
     favorito: false,
     linkedin: "https://www.linkedin.com/in/daniel-estevam-b63635297/",
     instagram: "https://www.instagram.com/daniel_estevam12/",
-    setor: setoresInicial[0].nome
+    setor: setoresInicial[6].nome
   },
   {
     id: uuidv4(),
@@ -170,6 +170,6 @@ export const colabInicial = [
     favorito: true,
     linkedin: "https://www.linkedin.com/in/matheus-santos-bb88a2240/",
     instagram: "https://www.instagram.com/mthviinicius/",
-    setor: setoresInicial[2].nome
+    setor: setoresInicial[0].nome
   }
 ]

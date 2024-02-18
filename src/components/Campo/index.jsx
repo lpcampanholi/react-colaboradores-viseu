@@ -4,7 +4,7 @@ function Campo({ tipo = 'text', valor, nome, placeholder, obrigatorio = false, a
   return (
     <div className="campo">
       <label htmlFor={nome}>{nome}</label>
-      <input
+      <input className={`campo-${tipo}`}
         type={tipo}
         value={valor}
         name={nome}
