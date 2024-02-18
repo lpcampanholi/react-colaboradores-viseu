@@ -14,7 +14,7 @@ const setoresInicial = [
   {
     id: uuidv4(),
     nome: 'Editorial',
-    cor: '#FF8E52',
+    cor: '#FFBA05',
   },
   {
     id: uuidv4(),
@@ -24,7 +24,7 @@ const setoresInicial = [
   {
     id: uuidv4(),
     nome: 'Fechamento',
-    cor: '#61D6C9',
+    cor: '#00B3D1',
   },
   {
     id: uuidv4(),

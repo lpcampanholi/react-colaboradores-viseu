@@ -1,5 +1,6 @@
 import './Formulario.css';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import Campo from "../Campo";
 import Botao from '../Botao';
 import ListaSuspensa from '../ListaSuspensa';
@@ -19,6 +20,7 @@ function Formularios({ lista, aoAdicionarColaborador, aoAdicionarSetor }) {
   function aoSubmeterColaborador(e) {
     e.preventDefault();
     const novoColaborador = {
+      id: uuidv4(),
       nome: nome,
       cargo: cargo,
       linkedin: linkedin,
