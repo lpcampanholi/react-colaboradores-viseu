@@ -1,32 +1,32 @@
-import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
-import Cabecalho from "./components/Cabecalho";
-import Formularios from "./components/Formularios/index.jsx";
-import Rodape from "./components/Rodape";
-import Setor from "./components/Setor";
-import TituloSetores from './components/TituloSetores';
-import setoresInicial from './Dados/setores.jsx';
-import { colabInicial } from './Dados/colaboradores.jsx';
+import { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
+import Cabecalho from "./components/Cabecalho"
+import Formularios from "./components/Formularios/index.jsx"
+import Rodape from "./components/Rodape"
+import Setor from "./components/Setor"
+import TituloSetores from './components/TituloSetores'
+import setoresInicial from './Dados/setores.jsx'
+import { colabInicial } from './Dados/colaboradores.jsx'
 
 function App() {
 
-  const [setores, setSetores] = useState(setoresInicial);
-  const [colaboradores, setColaboradores] = useState(colabInicial);
+  const [setores, setSetores] = useState(setoresInicial)
+  const [colaboradores, setColaboradores] = useState(colabInicial)
 
   function adicionarColaborador(colaborador) {
-    setColaboradores([...colaboradores, colaborador]);
+    setColaboradores([...colaboradores, colaborador])
   }
 
   function adicionarSetor(novoSetor) {
-    setSetores([...setores, { ...novoSetor, id: uuidv4() }]);
+    setSetores([...setores, { ...novoSetor, id: uuidv4() }])
   }
 
   function alterarCorDoSetor(cor, id) {
     setSetores(setores.map((time) => {
       if (time.id === id) {
-        time.cor = cor;
+        time.cor = cor
       }
-      return time;
+      return time
     }))
   }
 
@@ -37,9 +37,9 @@ function App() {
   function favoritarColaborador(id) {
     setColaboradores(colaboradores.map((colaborador) => {
       if (colaborador.id === id) {
-        colaborador.favorito = !colaborador.favorito;
+        colaborador.favorito = !colaborador.favorito
       }
-      return colaborador;
+      return colaborador
     }))
   }
 
@@ -48,7 +48,7 @@ function App() {
       if (colaborador.id === id) {
         colaborador.setor = novoSetor
       }
-      return colaborador;
+      return colaborador
     }))
   }
 
@@ -78,7 +78,7 @@ function App() {
       })}
       <Rodape />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
