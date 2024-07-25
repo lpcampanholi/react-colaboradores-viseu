@@ -35,6 +35,7 @@ function Formularios({ lista, aoAdicionarColaborador, aoAdicionarSetor }) {
     setSetor('');
     setImagem('');
     setSetor('');
+    alert("Colaborador Cadastrado!")
   }
 
   function aoSubmeterSetor(e) {
