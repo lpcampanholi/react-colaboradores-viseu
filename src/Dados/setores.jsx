@@ -3,17 +3,17 @@ import { v4 as uuidv4 } from 'uuid';
 const setoresInicial = [
   {
     id: uuidv4(),
-    nome: 'Atendimento',
+    nome: 'Suporte',
     cor: '#57C278',
   },
   {
     id: uuidv4(),
-    nome: 'Comercial',
+    nome: 'Vendas',
     cor: '#82CFFA',
   },
   {
     id: uuidv4(),
-    nome: 'Editorial',
+    nome: 'Financeiro',
     cor: '#FFBA05',
   },
   {
@@ -23,17 +23,17 @@ const setoresInicial = [
   },
   {
     id: uuidv4(),
-    nome: 'Fechamento',
+    nome: 'Desenvolvimento',
     cor: '#00B3D1',
   },
   {
     id: uuidv4(),
-    nome: 'Financeiro e RH',
+    nome: 'Recursos Humanos',
     cor: '#E283CA',
   },
   {
     id: uuidv4(),
-    nome: 'Expedição',
+    nome: 'Int. Artificial',
     cor: '#E06B69',
   }
 ]
